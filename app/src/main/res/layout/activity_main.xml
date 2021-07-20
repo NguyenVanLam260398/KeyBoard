@@ -15,7 +15,7 @@
         >
       <FrameLayout style="@style/background_text_small">
           <TextView
-              android:text="F1"
+              android:text="Esc"
               style="@style/style_text_small"></TextView>
       </FrameLayout>
     </FrameLayout>
@@ -47,21 +47,21 @@
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F2"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F3"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F4"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
@@ -77,28 +77,28 @@
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F5"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F6"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F7"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F8"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
@@ -113,28 +113,33 @@
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F9"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
+                        android:text="F10"
                         style="@style/style_text_small"></TextView>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/background_small"
+                android:layout_width="57dp">
+
+                <FrameLayout style="@style/background_text_small">
+
+                    <TextView
+                        style="@style/style_text_small"
+                        android:text="F11"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
-                        android:text="F1"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F1"
+                        android:text="F12"
                         style="@style/style_text_small"></TextView>
                 </FrameLayout>
             </FrameLayout>
@@ -151,23 +156,47 @@
         android:layout_height="wrap_content">
         <FrameLayout style="@style/background_small">
             <FrameLayout style="@style/background_text_small">
+
                 <TextView
-                    android:text="F1"
-                    style="@style/style_text_small"></TextView>
+                    android:textSize="10sp"
+                    style="@style/style_text_small"
+                    android:text="PrtSc"></TextView>
             </FrameLayout>
         </FrameLayout>
         <FrameLayout style="@style/background_small">
             <FrameLayout style="@style/background_text_small">
                 <TextView
-                    android:text="F1"
+                    android:textSize="10sp"
+                    android:text="Scroll Lock"
                     style="@style/style_text_small"></TextView>
             </FrameLayout>
         </FrameLayout>
         <FrameLayout style="@style/background_small">
-            <FrameLayout style="@style/background_text_small">
-                <TextView
-                    android:text="F1"
-                    style="@style/style_text_small"></TextView>
+            <FrameLayout style="@style/style_text_small"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:gravity="left|top"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pause"
+                        android:textSize="10sp"
+                        ></TextView>
+                    <TextView
+                        android:gravity="left|bottom"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Break"
+                        android:textSize="10sp"
+                        ></TextView>
+                </LinearLayout>
+
             </FrameLayout>
         </FrameLayout>
     </LinearLayout>
@@ -191,100 +220,374 @@
                 android:layout_width="836dp"
                 android:layout_height="wrap_content">
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="~"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="`"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="!"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="1"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="'@'"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="2"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="#"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="3"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="$"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="4"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="%"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="5"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="^"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="6"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="dollar"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="7"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="*"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="8"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
+                    </FrameLayout>
+                </FrameLayout>
+
+                <FrameLayout style="@style/background_small">
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="("
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="9"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=")"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="-"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="_"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="+"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="="
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_medium">
                     <FrameLayout style="@style/background_text_medium">
                         <TextView
-                            android:text="F1"
+                            android:text="Backspace"
                             style="@style/style_text_medium"></TextView>
                     </FrameLayout>
                 </FrameLayout>
@@ -305,99 +608,162 @@
                 <FrameLayout style="@style/background_tab">
                     <FrameLayout style="@style/background_text_tab">
                         <TextView
-                            android:text="F1"
+                            android:text="Tab"
                             style="@style/style_text_tab"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="Q"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="W"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="E"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="R"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="T"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="Y"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="U"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="I"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="O"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="P"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="{"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="["
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="}"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="]"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_tab">
-                    <FrameLayout style="@style/background_text_tab">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_tab"></TextView>
+                    <FrameLayout style="@style/style_text_tab"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="|"
+                                android:textSize="10sp"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\"
+                                android:textSize="10sp"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
@@ -413,85 +779,124 @@
                 <FrameLayout style="@style/background_capslock">
                     <FrameLayout style="@style/background_text_capslock">
                         <TextView
-                            android:text="F1"
+                            android:textSize="10sp"
+                            android:text="Caps Lock"
                             style="@style/style_text_capslock"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="A"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="S"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="D"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="F"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="G"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="H"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="J"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="K"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="L"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=":"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=";"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="''"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="'"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_enter">
@@ -500,7 +905,7 @@
                         style="@style/background_text_enter">
                         <TextView
                             style="@style/style_text_enter"
-                            android:text="F1"></TextView>
+                            android:text="Enter"></TextView>
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
@@ -514,78 +919,135 @@
                 <FrameLayout style="@style/background_enter">
                     <FrameLayout style="@style/background_text_enter">
                         <TextView
-                            android:text="F1"
+                            android:text="Shift"
                             style="@style/style_text_enter"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="Z"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="X"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="C"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="V"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="B"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="N"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="M"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="<"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=","
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text=">"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="."
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
+                    <FrameLayout style="@style/style_text_small"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:weightSum="2"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:gravity="left|top"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="'?'"
+                                ></TextView>
+                            <TextView
+                                android:gravity="left|bottom"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="/"
+                                ></TextView>
+                        </LinearLayout>
+
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_shift">
@@ -594,7 +1056,7 @@
                         style="@style/background_text_shift">
                         <TextView
                             style="@style/style_text_shift"
-                            android:text="F1"></TextView>
+                            android:text="Shift"></TextView>
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
@@ -606,21 +1068,21 @@
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Ctrl"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Win"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Alt"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
@@ -638,28 +1100,29 @@
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Alt"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Win"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Menu"
+                            android:textSize="10sp"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_ctrl">
                     <FrameLayout style="@style/background_text_ctrl">
                         <TextView
-                            android:text="F1"
+                            android:text="Ctrl"
                             style="@style/style_text_ctrl"></TextView>
                     </FrameLayout>
                 </FrameLayout>
@@ -687,21 +1150,23 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="Insert"
+                            android:textSize="10sp"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="Home"
+                            android:textSize="10sp"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="PgUp"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
@@ -714,21 +1179,22 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:textSize="10sp"
+                            android:text="Delete"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="End"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="PgDn"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
@@ -795,22 +1261,88 @@
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="NumLock"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="'"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="*"
                                 style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="7"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Home"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="8"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="9"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="PgUp"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
                         </FrameLayout>
                     </FrameLayout>
                 </LinearLayout>
@@ -821,47 +1353,21 @@
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="4"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="5"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
+                                android:text="6"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -871,24 +1377,64 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="End"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="F1"
+                                android:text="2"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="3"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="PgDn"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
                         </FrameLayout>
                     </FrameLayout>
                 </LinearLayout>
@@ -898,17 +1444,57 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
                     <FrameLayout style="@style/background_ins">
-                        <FrameLayout style="@style/background_text_ins">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_ins"></TextView>
+                        <FrameLayout style="@style/style_text_ins"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="0"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="9"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Ins"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="F1"
-                                style="@style/style_text_small"></TextView>
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="."
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Del"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
                         </FrameLayout>
                     </FrameLayout>
                 </LinearLayout>
@@ -921,21 +1507,22 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="F1"
+                            android:text="`"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_plus">
                     <FrameLayout style="@style/background_text_plus">
                         <TextView
-                            android:text="F1"
+                            android:text="+"
                             style="@style/style_text_plus"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_plus">
                     <FrameLayout style="@style/background_text_plus">
                         <TextView
-                            android:text="F1"
+                            android:textSize="10sp"
+                            android:text="Enter"
                             style="@style/style_text_plus"></TextView>
                     </FrameLayout>
                 </FrameLayout>
