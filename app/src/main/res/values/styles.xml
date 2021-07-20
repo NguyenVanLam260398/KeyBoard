@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="background_small">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_small">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_small">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_medium">
+        <item name="android:layout_width">105dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_medium">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_medium">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">85dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_tab">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_tab">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_tab">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_capslock">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_capslock">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_capslock">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">76dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_enter">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_enter">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_enter">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_shift">
+        <item name="android:layout_width">151dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_shift">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_shift">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">131dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_ctrl">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_ctrl">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_ctrl">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="background_space">
+        <item name="android:layout_width">340dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_space">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_space">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">320dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="background_ins">
+        <item name="android:layout_width">112dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_ins">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_ins">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">92dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="background_plus">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:background">@drawable/background</item>
+    </style>
+
+    <style name="background_text_plus">
+        <item name="android:background">@drawable/backgroundtext</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_text_plus">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_width">36dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
