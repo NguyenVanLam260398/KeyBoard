@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="1280dp"
         android:layout_height="378dp"
         android:id="@+id/keyboard"
@@ -45,6 +45,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F1"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -52,6 +53,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F2"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -59,6 +61,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F3"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -66,6 +69,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F4"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -82,6 +86,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F5"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -89,6 +94,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F6"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -96,6 +102,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F7"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -103,6 +110,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F8"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -118,6 +126,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F9"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -125,6 +134,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F10"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -137,6 +147,7 @@
                     <FrameLayout style="@style/background_text_small">
 
                         <TextView
+                            android:tag="key"
                             style="@style/style_text_small"
                             android:text="F11"></TextView>
                     </FrameLayout>
@@ -144,6 +155,7 @@
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
+                            android:tag="key"
                             android:text="F12"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
@@ -165,12 +177,14 @@
                     <TextView
                         android:textSize="10sp"
                         style="@style/style_text_small"
+                        android:tag="key"
                         android:text="PrtSc"></TextView>
                 </FrameLayout>
             </FrameLayout>
             <FrameLayout style="@style/background_small">
                 <FrameLayout style="@style/background_text_small">
                     <TextView
+                        android:tag="key"
                         android:textSize="10sp"
                         android:text="Scroll Lock"
                         style="@style/style_text_small"></TextView>
@@ -189,6 +203,7 @@
                             android:layout_weight="1"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:tag="key"
                             android:text="Pause"
                             android:textSize="10sp"
                             ></TextView>
@@ -198,6 +213,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:text="Break"
+                            android:tag="key"
                             android:textSize="10sp"
                             ></TextView>
                     </LinearLayout>
@@ -238,6 +254,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="~"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                                 <TextView
@@ -246,6 +263,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="`"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -266,6 +284,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="!"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                                 <TextView
@@ -274,6 +293,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="1"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -294,6 +314,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="'@'"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                                 <TextView
@@ -303,6 +324,7 @@
                                     android:layout_height="match_parent"
                                     android:text="2"
                                     android:textSize="10sp"
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -321,6 +343,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="#"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -329,6 +352,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="3"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -349,6 +373,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="$"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -357,6 +382,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="4"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -377,6 +403,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="%"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -385,6 +412,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="5"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -405,6 +433,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="^"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -413,6 +442,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="6"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -433,6 +463,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="dollar"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -441,6 +472,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="7"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -461,6 +493,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="*"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -469,6 +502,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="8"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -490,6 +524,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="("
                                     android:textSize="10sp"
                                     ></TextView>
@@ -498,6 +533,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="9"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -518,6 +554,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text=")"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -526,6 +563,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="0"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -546,6 +584,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="-"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -554,6 +593,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="_"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -574,6 +614,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="+"
                                     android:textSize="10sp"
                                     ></TextView>
@@ -582,6 +623,7 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:tag="key"
                                     android:text="="
                                     android:textSize="10sp"
                                     ></TextView>
@@ -593,6 +635,7 @@
                         <FrameLayout style="@style/background_text_medium">
                             <TextView
                                 android:text="Backspace"
+                                android:tag="key"
                                 style="@style/style_text_medium"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -614,6 +657,7 @@
                         <FrameLayout style="@style/background_text_tab">
                             <TextView
                                 android:text="Tab"
+                                android:tag="key"
                                 style="@style/style_text_tab"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -621,6 +665,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="Q"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -628,27 +673,35 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="W"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="E"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
+
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="R"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
+
+                            <FrameLayout style="@style/background_text_small">
+
+                                <TextView
+                                    style="@style/style_text_small"
+                                    android:tag="key"
+                                    android:text="E"></TextView>
+
+                            </FrameLayout>
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="T"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -656,6 +709,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="Y"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -670,6 +724,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="I"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -677,6 +732,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="O"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -684,6 +740,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="P"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -702,6 +759,7 @@
                                     android:layout_height="match_parent"
                                     android:text="{"
                                     android:textSize="10sp"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -709,6 +767,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="["
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -729,6 +788,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="}"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                                 <TextView
@@ -737,6 +797,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="]"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -757,6 +818,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="|"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                                 <TextView
@@ -765,6 +827,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="\"
+                                    android:tag="key"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -785,6 +848,7 @@
                         <FrameLayout style="@style/background_text_capslock">
                             <TextView
                                 android:textSize="10sp"
+                                android:tag="key"
                                 android:text="Caps Lock"
                                 style="@style/style_text_capslock"></TextView>
                         </FrameLayout>
@@ -793,6 +857,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="A"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -800,6 +865,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="S"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -807,6 +873,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="D"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -814,6 +881,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="F"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -821,6 +889,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="G"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -828,6 +897,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="H"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -835,6 +905,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="J"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -842,6 +913,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="K"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -849,6 +921,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="L"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -866,6 +939,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=":"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -873,6 +947,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=";"
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -892,6 +967,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="''"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -899,6 +975,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="'"
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -910,7 +987,8 @@
                             style="@style/background_text_enter">
                             <TextView
                                 style="@style/style_text_enter"
-                                android:text="Enter"></TextView>
+                                android:text="Enter"
+                                android:tag="key"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                 </LinearLayout>
@@ -925,6 +1003,7 @@
                         <FrameLayout style="@style/background_text_enter">
                             <TextView
                                 android:text="Shift"
+                                android:tag="key"
                                 style="@style/style_text_enter"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -932,6 +1011,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="Z"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -939,6 +1019,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="X"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -946,6 +1027,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="C"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -953,6 +1035,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="V"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -960,6 +1043,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="B"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -967,6 +1051,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="N"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -974,6 +1059,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="M"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -991,6 +1077,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="F1"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -998,6 +1085,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text=","
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -1017,6 +1105,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="F1"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -1024,6 +1113,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="."
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -1043,6 +1133,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="'?'"
+                                    android:tag="key"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
@@ -1050,6 +1141,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="/"
+                                    android:tag="key"
                                     ></TextView>
                             </LinearLayout>
 
@@ -1061,7 +1153,8 @@
                             style="@style/background_text_shift">
                             <TextView
                                 style="@style/style_text_shift"
-                                android:text="Shift"></TextView>
+                                android:text="Shift"
+                                android:tag="key"></TextView>
                         </FrameLayout>
                     </FrameLayout>
                 </LinearLayout>
@@ -1074,6 +1167,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Ctrl"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1081,6 +1175,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Win"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1088,6 +1183,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Alt"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1106,6 +1202,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Alt"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1113,6 +1210,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Win"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1120,6 +1218,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Menu"
+                                android:tag="key"
                                 android:textSize="10sp"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
@@ -1128,6 +1227,7 @@
                         <FrameLayout style="@style/background_text_ctrl">
                             <TextView
                                 android:text="Ctrl"
+                                android:tag="key"
                                 style="@style/style_text_ctrl"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1156,6 +1256,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="Insert"
+                                android:tag="key"
                                 android:textSize="10sp"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
@@ -1164,6 +1265,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="Home"
+                                android:tag="key"
                                 android:textSize="10sp"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
@@ -1172,6 +1274,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="PgUp"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1185,6 +1288,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:textSize="10sp"
+                                android:tag="key"
                                 android:text="Delete"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
@@ -1193,6 +1297,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="End"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1200,6 +1305,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="PgDn"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1215,6 +1321,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="F1"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1228,6 +1335,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="F1"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1235,6 +1343,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="F1"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1242,6 +1351,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="F1"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1267,6 +1377,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="NumLock"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1274,6 +1385,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="'"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1281,6 +1393,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="*"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1303,6 +1416,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="7"
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1310,6 +1424,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="Home"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1320,6 +1435,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="8"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1337,6 +1453,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="9"
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1344,6 +1461,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="PgUp"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1359,6 +1477,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="4"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1366,6 +1485,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="5"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1373,6 +1493,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="6"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1395,6 +1516,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="1"
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1402,6 +1524,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="End"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1412,6 +1535,7 @@
                             <FrameLayout style="@style/background_text_small">
                                 <TextView
                                     android:text="2"
+                                    android:tag="key"
                                     style="@style/style_text_small"></TextView>
                             </FrameLayout>
                         </FrameLayout>
@@ -1429,6 +1553,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="3"
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1436,6 +1561,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="PgDn"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1462,6 +1588,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="9"
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1469,6 +1596,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="Ins"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1489,6 +1617,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="."
+                                        android:tag="key"
                                         ></TextView>
                                     <TextView
                                         android:gravity="left|bottom"
@@ -1496,6 +1625,7 @@
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:text="Del"
+                                        android:tag="key"
                                         android:textSize="10sp"
                                         ></TextView>
                                 </LinearLayout>
@@ -1513,6 +1643,7 @@
                         <FrameLayout style="@style/background_text_small">
                             <TextView
                                 android:text="`"
+                                android:tag="key"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1520,6 +1651,7 @@
                         <FrameLayout style="@style/background_text_plus">
                             <TextView
                                 android:text="+"
+                                android:tag="key"
                                 style="@style/style_text_plus"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1528,6 +1660,7 @@
                             <TextView
                                 android:textSize="10sp"
                                 android:text="Enter"
+                                android:tag="key"
                                 style="@style/style_text_plus"></TextView>
                         </FrameLayout>
                     </FrameLayout>
