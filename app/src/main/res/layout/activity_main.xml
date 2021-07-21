@@ -1,1288 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="1280dp"
-    android:layout_height="378dp"
-    android:background="#eeeeee"
-    tools:context=".MainActivity">
-    <FrameLayout style="@style/background_small"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:id="@+id/view_esc"
-        >
-      <FrameLayout style="@style/background_text_small">
-          <TextView
-              android:text="Esc"
-              style="@style/style_text_small"></TextView>
-      </FrameLayout>
-    </FrameLayout>
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/view_esc"
-        android:id="@+id/layout_line_fisrt"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="56dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
-        <LinearLayout
-            app:layout_constraintTop_toTopOf="@+id/layout_line_fisrt"
-            app:layout_constraintLeft_toLeftOf="@+id/layout_line_fisrt"
-            android:id="@+id/layout_line_fisrt_columfirst"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F1"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F2"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F3"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F4"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            app:layout_constraintTop_toTopOf="@id/layout_line_fisrt"
-            app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt_columfirst"
-            android:id="@+id/layout_line_fisrt_columsecond"
-            android:layout_marginLeft="26dp"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F5"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F6"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F7"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F8"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-        </LinearLayout>
-        <LinearLayout
-            app:layout_constraintTop_toTopOf="@id/layout_line_fisrt"
-            app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt_columsecond"
-            android:layout_marginLeft="26dp"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F9"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F10"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-
-            <FrameLayout
-                style="@style/background_small"
-                android:layout_width="57dp">
-
-                <FrameLayout style="@style/background_text_small">
-
-                    <TextView
-                        style="@style/style_text_small"
-                        android:text="F11"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-            <FrameLayout style="@style/background_small">
-                <FrameLayout style="@style/background_text_small">
-                    <TextView
-                        android:text="F12"
-                        style="@style/style_text_small"></TextView>
-                </FrameLayout>
-            </FrameLayout>
-        </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="15dp"
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <FrameLayout style="@style/background_small">
-            <FrameLayout style="@style/background_text_small">
-
-                <TextView
-                    android:textSize="10sp"
-                    style="@style/style_text_small"
-                    android:text="PrtSc"></TextView>
-            </FrameLayout>
-        </FrameLayout>
-        <FrameLayout style="@style/background_small">
+<LinearLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="1280dp"
+        android:layout_height="378dp"
+        android:id="@+id/keyboard"
+        android:background="#eeeeee"
+        tools:context=".MainActivity">
+        <FrameLayout style="@style/background_small"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/view_esc"
+            >
             <FrameLayout style="@style/background_text_small">
                 <TextView
-                    android:textSize="10sp"
-                    android:text="Scroll Lock"
+                    android:text="Esc"
                     style="@style/style_text_small"></TextView>
             </FrameLayout>
         </FrameLayout>
-        <FrameLayout style="@style/background_small">
-            <FrameLayout style="@style/style_text_small"
-                android:layout_gravity="center">
-                <LinearLayout
-                    android:weightSum="2"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <TextView
-                        android:gravity="left|top"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Pause"
-                        android:textSize="10sp"
-                        ></TextView>
-                    <TextView
-                        android:gravity="left|bottom"
-                        android:layout_weight="1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Break"
-                        android:textSize="10sp"
-                        ></TextView>
-                </LinearLayout>
-
-            </FrameLayout>
-        </FrameLayout>
-    </LinearLayout>
 
 
-
-    <LinearLayout
-        android:layout_marginTop="28dp"
-        android:layout_marginLeft="10dp"
-        app:layout_constraintTop_toBottomOf="@id/layout_line_fisrt"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <LinearLayout
-            android:orientation="vertical"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/view_esc"
+            android:id="@+id/layout_line_fisrt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="56dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            >
             <LinearLayout
+                app:layout_constraintTop_toTopOf="@+id/layout_line_fisrt"
+                app:layout_constraintLeft_toLeftOf="@+id/layout_line_fisrt"
+                android:id="@+id/layout_line_fisrt_columfirst"
                 android:orientation="horizontal"
-                android:layout_width="836dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="~"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="`"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="!"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="1"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="'@'"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="2"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="#"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="3"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="$"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="4"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="%"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="5"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="^"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="6"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="dollar"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="7"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="*"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="8"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="("
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="9"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text=")"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="0"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="-"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="_"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="+"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="="
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_medium">
-                    <FrameLayout style="@style/background_text_medium">
+                    <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="Backspace"
-                            style="@style/style_text_medium"></TextView>
+                            android:text="F1"
+                            style="@style/style_text_small"></TextView>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout style="@style/background_small">
+                    <FrameLayout style="@style/background_text_small">
+                        <TextView
+                            android:text="F2"
+                            style="@style/style_text_small"></TextView>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout style="@style/background_small">
+                    <FrameLayout style="@style/background_text_small">
+                        <TextView
+                            android:text="F3"
+                            style="@style/style_text_small"></TextView>
+                    </FrameLayout>
+                </FrameLayout>
+                <FrameLayout style="@style/background_small">
+                    <FrameLayout style="@style/background_text_small">
+                        <TextView
+                            android:text="F4"
+                            style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
-
-
-
-
-
-
-
-
-
             <LinearLayout
+                app:layout_constraintTop_toTopOf="@id/layout_line_fisrt"
+                app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt_columfirst"
+                android:id="@+id/layout_line_fisrt_columsecond"
+                android:layout_marginLeft="26dp"
                 android:orientation="horizontal"
-                android:layout_width="836dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_tab">
-                    <FrameLayout style="@style/background_text_tab">
-                        <TextView
-                            android:text="Tab"
-                            style="@style/style_text_tab"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="Q"
+                            android:text="F5"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="W"
+                            android:text="F6"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="E"
+                            android:text="F7"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="R"
+                            android:text="F8"
                             style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="T"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="Y"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="U"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="I"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="O"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="P"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="{"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="["
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="}"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="]"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_tab">
-                    <FrameLayout style="@style/style_text_tab"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="|"
-                                android:textSize="10sp"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\"
-                                android:textSize="10sp"
-                                ></TextView>
-                        </LinearLayout>
-
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
-
-
-
-
-
             <LinearLayout
+                app:layout_constraintTop_toTopOf="@id/layout_line_fisrt"
+                app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt_columsecond"
+                android:layout_marginLeft="26dp"
                 android:orientation="horizontal"
-                android:layout_width="836dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_capslock">
-                    <FrameLayout style="@style/background_text_capslock">
-                        <TextView
-                            android:textSize="10sp"
-                            android:text="Caps Lock"
-                            style="@style/style_text_capslock"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="A"
+                            android:text="F9"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
                     <FrameLayout style="@style/background_text_small">
                         <TextView
-                            android:text="S"
+                            android:text="F10"
                             style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="D"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="G"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="H"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="J"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="K"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="L"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text=":"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text=";"
-                                ></TextView>
-                        </LinearLayout>
 
+                <FrameLayout
+                    style="@style/background_small"
+                    android:layout_width="57dp">
+
+                    <FrameLayout style="@style/background_text_small">
+
+                        <TextView
+                            style="@style/style_text_small"
+                            android:text="F11"></TextView>
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="''"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="'"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_enter">
-
-                    <FrameLayout
-                        style="@style/background_text_enter">
+                    <FrameLayout style="@style/background_text_small">
                         <TextView
-                            style="@style/style_text_enter"
-                            android:text="Enter"></TextView>
+                            android:text="F12"
+                            style="@style/style_text_small"></TextView>
                     </FrameLayout>
                 </FrameLayout>
             </LinearLayout>
-
-
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="836dp"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_enter">
-                    <FrameLayout style="@style/background_text_enter">
-                        <TextView
-                            android:text="Shift"
-                            style="@style/style_text_enter"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="Z"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="X"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="C"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="V"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="B"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="N"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="M"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="F1"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text=","
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="F1"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="."
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/style_text_small"
-                        android:layout_gravity="center">
-                        <LinearLayout
-                            android:weightSum="2"
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <TextView
-                                android:gravity="left|top"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="'?'"
-                                ></TextView>
-                            <TextView
-                                android:gravity="left|bottom"
-                                android:layout_weight="1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="/"
-                                ></TextView>
-                        </LinearLayout>
-
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_shift">
-
-                    <FrameLayout
-                        style="@style/background_text_shift">
-                        <TextView
-                            style="@style/style_text_shift"
-                            android:text="Shift"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="836dp"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Ctrl"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Win"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Alt"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-
-
-
-
-
-                <FrameLayout style="@style/background_space">
-                    <FrameLayout style="@style/background_text_space">
-                        <TextView
-                            style="@style/style_text_space"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Alt"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Win"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Menu"
-                            android:textSize="10sp"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_ctrl">
-                    <FrameLayout style="@style/background_text_ctrl">
-                        <TextView
-                            android:text="Ctrl"
-                            style="@style/style_text_ctrl"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-
-
-
-
-
-
-            </LinearLayout>
-
-
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_marginHorizontal="15dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="Insert"
-                            android:textSize="10sp"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="Home"
-                            android:textSize="10sp"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="PgUp"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginHorizontal="15dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:textSize="10sp"
-                            android:text="Delete"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="End"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="PgDn"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="55dp"
-                android:layout_marginHorizontal="71dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_marginHorizontal="15dp"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="F1"
-                            style="@style/style_text_small"></TextView>
-                    </FrameLayout>
-                </FrameLayout>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/layout_line_fisrt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+            <FrameLayout style="@style/background_small">
+                <FrameLayout style="@style/background_text_small">
+
+                    <TextView
+                        android:textSize="10sp"
+                        style="@style/style_text_small"
+                        android:text="PrtSc"></TextView>
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout style="@style/background_small">
+                <FrameLayout style="@style/background_text_small">
+                    <TextView
+                        android:textSize="10sp"
+                        android:text="Scroll Lock"
+                        style="@style/style_text_small"></TextView>
+                </FrameLayout>
+            </FrameLayout>
+            <FrameLayout style="@style/background_small">
+                <FrameLayout style="@style/style_text_small"
+                    android:layout_gravity="center">
+                    <LinearLayout
+                        android:weightSum="2"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:gravity="left|top"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Pause"
+                            android:textSize="10sp"
+                            ></TextView>
+                        <TextView
+                            android:gravity="left|bottom"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Break"
+                            android:textSize="10sp"
+                            ></TextView>
+                    </LinearLayout>
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/layout_line_fisrt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <LinearLayout
                     android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="NumLock"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="'"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="*"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="836dp"
                     android:layout_height="wrap_content">
                     <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/style_text_small"
@@ -1297,14 +237,15 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="7"
+                                    android:text="~"
+                                    android:textSize="10sp"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="Home"
+                                    android:text="`"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -1312,13 +253,6 @@
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="8"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/style_text_small"
                             android:layout_gravity="center">
                             <LinearLayout
@@ -1331,72 +265,15 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="9"
+                                    android:text="!"
+                                    android:textSize="10sp"
                                     ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="PgUp"
-                                    android:textSize="10sp"
-                                    ></TextView>
-                            </LinearLayout>
-
-                        </FrameLayout>
-                    </FrameLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="4"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="5"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/background_text_small">
-                            <TextView
-                                android:text="6"
-                                style="@style/style_text_small"></TextView>
-                        </FrameLayout>
-                    </FrameLayout>
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <FrameLayout style="@style/background_small">
-                        <FrameLayout style="@style/style_text_small"
-                            android:layout_gravity="center">
-                            <LinearLayout
-                                android:weightSum="2"
-                                android:orientation="vertical"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <TextView
-                                    android:gravity="left|top"
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="1"
-                                    ></TextView>
-                                <TextView
-                                    android:gravity="left|bottom"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="End"
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -1404,9 +281,409 @@
                         </FrameLayout>
                     </FrameLayout>
                     <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="'@'"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="2"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="#"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="3"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="$"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="4"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="%"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="5"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="^"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="6"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="dollar"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="7"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="*"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="8"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="("
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="9"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=")"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="0"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="-"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="_"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="+"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="="
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_medium">
+                        <FrameLayout style="@style/background_text_medium">
+                            <TextView
+                                android:text="Backspace"
+                                style="@style/style_text_medium"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="836dp"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_tab">
+                        <FrameLayout style="@style/background_text_tab">
+                            <TextView
+                                android:text="Tab"
+                                style="@style/style_text_tab"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
                         <FrameLayout style="@style/background_text_small">
                             <TextView
-                                android:text="2"
+                                android:text="Q"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="W"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="E"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="R"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="T"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="Y"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="U"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="I"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="O"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="P"
                                 style="@style/style_text_small"></TextView>
                         </FrameLayout>
                     </FrameLayout>
@@ -1423,47 +700,15 @@
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="3"
-                                    ></TextView>
-                                <TextView
-                                    android:gravity="left|bottom"
-                                    android:layout_weight="1"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="PgDn"
+                                    android:text="{"
                                     android:textSize="10sp"
                                     ></TextView>
-                            </LinearLayout>
-
-                        </FrameLayout>
-                    </FrameLayout>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <FrameLayout style="@style/background_ins">
-                        <FrameLayout style="@style/style_text_ins"
-                            android:layout_gravity="center">
-                            <LinearLayout
-                                android:weightSum="2"
-                                android:orientation="vertical"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <TextView
-                                    android:gravity="left|top"
-                                    android:layout_weight="0"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:text="9"
-                                    ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="Ins"
+                                    android:text="["
                                     android:textSize="10sp"
                                     ></TextView>
                             </LinearLayout>
@@ -1480,76 +725,824 @@
                                 android:layout_height="match_parent">
                                 <TextView
                                     android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="}"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="]"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_tab">
+                        <FrameLayout style="@style/style_text_tab"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="|"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="\"
+                                    android:textSize="10sp"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="836dp"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_capslock">
+                        <FrameLayout style="@style/background_text_capslock">
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Caps Lock"
+                                style="@style/style_text_capslock"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="A"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="S"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="D"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="F"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="G"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="H"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="J"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="K"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="L"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=":"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=";"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="''"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="'"
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_enter">
+
+                        <FrameLayout
+                            style="@style/background_text_enter">
+                            <TextView
+                                style="@style/style_text_enter"
+                                android:text="Enter"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="836dp"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_enter">
+                        <FrameLayout style="@style/background_text_enter">
+                            <TextView
+                                android:text="Shift"
+                                style="@style/style_text_enter"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="Z"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="X"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="C"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="V"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="B"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="N"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="M"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="F1"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text=","
+                                    ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="F1"
+                                    ></TextView>
+                                <TextView
+                                    android:gravity="left|bottom"
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:text="."
                                     ></TextView>
+                            </LinearLayout>
+
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/style_text_small"
+                            android:layout_gravity="center">
+                            <LinearLayout
+                                android:weightSum="2"
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <TextView
+                                    android:gravity="left|top"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="'?'"
+                                    ></TextView>
                                 <TextView
                                     android:gravity="left|bottom"
                                     android:layout_weight="1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:text="Del"
-                                    android:textSize="10sp"
+                                    android:text="/"
                                     ></TextView>
                             </LinearLayout>
 
                         </FrameLayout>
                     </FrameLayout>
+                    <FrameLayout style="@style/background_shift">
+
+                        <FrameLayout
+                            style="@style/background_text_shift">
+                            <TextView
+                                style="@style/style_text_shift"
+                                android:text="Shift"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
                 </LinearLayout>
 
-        </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="836dp"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Ctrl"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Win"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Alt"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+
+
+
+
+
+                    <FrameLayout style="@style/background_space">
+                        <FrameLayout style="@style/background_text_space">
+                            <TextView
+                                style="@style/style_text_space"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Alt"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Win"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Menu"
+                                android:textSize="10sp"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_ctrl">
+                        <FrameLayout style="@style/background_text_ctrl">
+                            <TextView
+                                android:text="Ctrl"
+                                style="@style/style_text_ctrl"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-                <FrameLayout style="@style/background_small">
-                    <FrameLayout style="@style/background_text_small">
-                        <TextView
-                            android:text="`"
-                            style="@style/style_text_small"></TextView>
+                <LinearLayout
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="Insert"
+                                android:textSize="10sp"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
                     </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_plus">
-                    <FrameLayout style="@style/background_text_plus">
-                        <TextView
-                            android:text="+"
-                            style="@style/style_text_plus"></TextView>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="Home"
+                                android:textSize="10sp"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
                     </FrameLayout>
-                </FrameLayout>
-                <FrameLayout style="@style/background_plus">
-                    <FrameLayout style="@style/background_text_plus">
-                        <TextView
-                            android:textSize="10sp"
-                            android:text="Enter"
-                            style="@style/style_text_plus"></TextView>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="PgUp"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
                     </FrameLayout>
-                </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Delete"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="End"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="PgDn"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="55dp"
+                    android:layout_marginHorizontal="71dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="F1"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="F1"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="F1"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="F1"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="NumLock"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="'"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="*"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/style_text_small"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="7"
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Home"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
 
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="8"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/style_text_small"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="9"
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="PgUp"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
 
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="4"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="5"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="6"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/style_text_small"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="1"
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="End"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/background_text_small">
+                                <TextView
+                                    android:text="2"
+                                    style="@style/style_text_small"></TextView>
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/style_text_small"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="3"
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="PgDn"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <FrameLayout style="@style/background_ins">
+                            <FrameLayout style="@style/style_text_ins"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="0"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="9"
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Ins"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </FrameLayout>
+                        <FrameLayout style="@style/background_small">
+                            <FrameLayout style="@style/style_text_small"
+                                android:layout_gravity="center">
+                                <LinearLayout
+                                    android:weightSum="2"
+                                    android:orientation="vertical"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:gravity="left|top"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="."
+                                        ></TextView>
+                                    <TextView
+                                        android:gravity="left|bottom"
+                                        android:layout_weight="1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Del"
+                                        android:textSize="10sp"
+                                        ></TextView>
+                                </LinearLayout>
+
+                            </FrameLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <FrameLayout style="@style/background_small">
+                        <FrameLayout style="@style/background_text_small">
+                            <TextView
+                                android:text="`"
+                                style="@style/style_text_small"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_plus">
+                        <FrameLayout style="@style/background_text_plus">
+                            <TextView
+                                android:text="+"
+                                style="@style/style_text_plus"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                    <FrameLayout style="@style/background_plus">
+                        <FrameLayout style="@style/background_text_plus">
+                            <TextView
+                                android:textSize="10sp"
+                                android:text="Enter"
+                                style="@style/style_text_plus"></TextView>
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
 
-
-
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/txt_show_content"
+        android:textSize="50sp"
+        android:text="Hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
